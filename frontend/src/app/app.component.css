@@ -1,0 +1,20 @@
+html, body, #full {
+  height: 100%;
+}
+
+#full {
+  display: flex;
+  flex-direction: column;
+}
+
+#content {
+  flex-grow: 1;
+}
+
+.toolbar-spacer {
+  flex: 1 1 auto;
+}
+
+.navicon {
+  margin-right: 8px;
+}

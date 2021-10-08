@@ -1,0 +1,25 @@
+<div id="full">
+  <mat-toolbar>
+    <mat-toolbar-row>
+      <button mat-icon-button (click)="sidenav.toggle()">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <span class="toolbar-spacer"></span>
+      <h1>Die Briosche</h1>
+      <span class="toolbar-spacer"></span>
+    </mat-toolbar-row>
+  </mat-toolbar>
+
+  <mat-sidenav-container style="height: 100%;">
+    <mat-sidenav #sidenav mode="side" opened="true" style="min-width: 300px;">
+      <mat-nav-list>
+        <a mat-list-item [routerLink]="'/home'"><mat-icon class="navicon">home</mat-icon> Home </a>
+
+      </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <router-outlet #content></router-outlet>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+
+</div>
