@@ -1,0 +1,14 @@
+h1 {
+  font-size: large;
+  font-weight: bold;
+}
+
+.dialog-text {
+  white-space: pre-wrap;
+}
+
+.mat-dialog-actions {
+  display: block;
+  text-align: center;
+}
+

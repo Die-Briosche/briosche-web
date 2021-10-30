@@ -11,11 +11,14 @@ import {MatListModule} from "@angular/material/list";
 import {RouterModule} from "@angular/router";
 import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from './home/home.component';
+import { MatDialogModule } from '@angular/material/dialog';
+import { ConfirmDialogComponent } from './components/confirm-dialog/confirm-dialog.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    ConfirmDialogComponent
   ],
   imports: [
     BrowserModule,
@@ -26,7 +29,8 @@ import { HomeComponent } from './home/home.component';
     MatSidenavModule,
     MatListModule,
     RouterModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatDialogModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
