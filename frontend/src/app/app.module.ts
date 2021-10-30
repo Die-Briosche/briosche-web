@@ -13,7 +13,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from './home/home.component';
 import { MatDialogModule } from '@angular/material/dialog';
 import { ConfirmDialogComponent } from './components/confirm-dialog/confirm-dialog.component';
-
+import { MatSnackBarModule } from '@angular/material/snack-bar'
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,6 +31,7 @@ import { ConfirmDialogComponent } from './components/confirm-dialog/confirm-dial
     RouterModule,
     AppRoutingModule,
     MatDialogModule,
+    MatSnackBarModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
