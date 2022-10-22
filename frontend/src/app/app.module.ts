@@ -1,37 +1,22 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import {MenubarModule} from 'primeng/menubar';
+import {MenuItem} from 'primeng/api';
 import { AppComponent } from './app.component';
+import { InputTextModule } from 'primeng/inputtext';
+import { ButtonModule } from 'primeng/button';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {MatToolbarModule} from "@angular/material/toolbar";
-import {MatButtonModule} from "@angular/material/button";
-import {MatIconModule} from "@angular/material/icon";
-import {MatSidenavModule} from "@angular/material/sidenav";
-import {MatListModule} from "@angular/material/list";
-import {RouterModule} from "@angular/router";
-import { AppRoutingModule } from './app-routing.module';
-import { HomeComponent } from './home/home.component';
-import { MatDialogModule } from '@angular/material/dialog';
-import { ConfirmDialogComponent } from './components/confirm-dialog/confirm-dialog.component';
-import { MatSnackBarModule } from '@angular/material/snack-bar'
+
 @NgModule({
   declarations: [
-    AppComponent,
-    HomeComponent,
-    ConfirmDialogComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    MatToolbarModule,
-    MatButtonModule,
-    MatIconModule,
-    MatSidenavModule,
-    MatListModule,
-    RouterModule,
-    AppRoutingModule,
-    MatDialogModule,
-    MatSnackBarModule,
+    MenubarModule,
+    InputTextModule,
+    ButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
